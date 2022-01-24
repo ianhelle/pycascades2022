@@ -1,0 +1,33 @@
+AzureSentinel:
+  Workspaces:
+QueryDefinitions:
+Azure:
+  cloud: "global"
+  auth_methods: ["cli", "msi", "interactive"]
+TIProviders:
+  OTX:
+    Args:
+      AuthKey: 
+        EnvironmentVar: OTX_KEY
+    Primary: True
+    Provider: "OTX"
+  VirusTotal:
+    Args:
+      AuthKey: 
+        EnvironmentVar: VIRUSTOTAL_KEY
+    Primary: True
+    Provider: "VirusTotal"
+OtherProviders:
+  GeoIPLite:
+    Args:
+      AuthKey: 
+        EnvironmentVar: MAXMIND_KEY
+      DBFolder: "~/.msticpy"
+    Provider: "GeoLiteLookup"
+DataProviders:
+  MicrosoftDefender:
+    Args:
+      TenantId: your_tenant_uuid
+      ClientId: your_client_uuid
+      ClientSecret:
+        EnvironmentVar: your_client_secret
