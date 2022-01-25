@@ -11,9 +11,24 @@ used in the talk (Sat 5th Feb 2022).
 A lot of the examples in the notebook (most of those shown in the presentation)
 will run standalone.
 
+# Slides
+
 ![Slides](PyCascades-2022-Slides.gif)
 
-## Installing MSTICPy
+The slides are available as:
+- [Accessible Powerpoint](PyCascades-2022.pptx)
+- [PDF](./PyCascades-2022-Slides.pdf)
+- [GIF](PyCascades-2022-Slides.gif)
+
+# Notebook
+
+[Notebook](MSTICPy-pycascades2022.ipynb)
+
+## Running the notebook in MyBinder
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ianhelle/pycascades2022/HEAD?labpath=MSTICPy-pycascades2022.ipynb)
+
+## Running locally
+### Installing MSTICPy
 
 The ones that use MSTICPy require installing MSTICPy in your Python
 environment. Minimum Python version is 3.6, we recommend
@@ -24,7 +39,7 @@ pip install msticpy
 ```
 [Installing MSTICPy](https://msticpy.readthedocs.io/getting_started/Installing.html)
 
-## MSTICPy Configuration
+### MSTICPy Configuration
 
 Some of the examples also require configuration settings.
 A sample `msticpyconfig.yaml` is available in this repo.
@@ -50,11 +65,7 @@ After entering the settings click, **Update** and then
 
 [Configuring MSTICPy](https://msticpy.readthedocs.io/getting_started/SettingsEditor.html)
 
-
-## Running the notebook in MyBinder
-
-
-## Other useful references
+# Other useful references
 
 [MSTICPy Github](https://github.com/microsoft/msticpy)
 
